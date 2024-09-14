@@ -10,14 +10,19 @@
         <!-- Background Rectangle -->
         <rect width="100%" height="300px" fill="#4CAF50" />
       
-        <!-- Circle on the right side -->
+        <!-- Circle in the center  -->
         <circle cx="750" cy="100" r="50" fill="black" />
       
         <!-- Polygon (triangle) on the left side -->
         <polygon points="50,150 100,50 150,150" fill="red" />
         <polygon points="50,100 100,50 150,150" fill="black" />
         <polygon points="50, 50 100,50 150,150" fill="black" />
-      
+
+        <!-- Polygon (triangle) on the right side, flipped -->
+        <polygon points="200,150 250,50 300,150" fill="red" />
+        <polygon points="200,100 250,50 300,150" fill="black" />
+        <polygon points="200,50 250,50 300,150" fill="black" />
+        
         <!-- Text -->
         <text x="50%" y="50%" font-size="40" fill="white" text-anchor="middle" dominant-baseline="middle">
           Trapaoholic Mixtapes
@@ -30,5 +35,42 @@
           <a href="views/three.html">Page Three</a>
         </ul>
       </nav>
-</body>
+
+      <!-- Assignment 5 -->
+      <h1>Assignment 5</h1>
+
+      <!-- CSS Question -->
+      <h2 class="css-question">How to Apply CSS to HTML.</h2>
+      <p class="css-question">Here's a quick tutourial on how to add an external CSS file in your HTML document. You can start by using the <code>&lt;link&gt;</code> element within the <code>&lt;head&gt;</code> section of your HTML document. 
+        The <code>&lt;link&gt;</code> element should also have the <code>rel</code> attribute set to <code>"stylesheet"</code> and the <code>href</code> attribute pointing to the path of your CSS file. Here's an example on how that would look:
+        <pre>
+          &lt;head&gt;
+              &lt;link rel="stylesheet" href="styles.css"&gt;
+          &lt;/head&gt;
+          </pre>
+        </p>   
+
+        <!-- JS Question -->
+        <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
+        <p class="js-question">Here's another short tutourial on how to include an external JavaScript file into your HTML document. You can start by using the <code>&lt;script&gt;</code> tag with the <code>src</code> attribute.
+           You're going to want to place this tag before the closing <code>&lt;/body&gt;</code> tag or within the <code>&lt;head&gt;</code> section. You can also add JavaScript code directly within the HTML document by simply inclosing 
+           your JavaScript code with the <code>&lt;script&gt;</code> tag. Here's an example for both situations:
+         
+          <!-- Example -->
+          <pre>
+            &lt;!-- Linking to an external JavaScript file --&gt;
+            &lt;head&gt;
+                &lt;script src="app.js"&gt;&lt;/script&gt;
+            &lt;/head&gt;
+            </pre>
+
+            <pre>
+              &lt;!-- Writing JavaScript within an HTML file --&gt;
+              &lt;body&gt;
+                  &lt;script&gt;
+                  console.log('Hello, world!');
+                  &lt;/script&gt;
+              &lt;/body&gt;
+              </pre>                               
+      </body>
 </html>
